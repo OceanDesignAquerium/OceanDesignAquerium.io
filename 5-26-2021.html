@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
+
+	<title>Ocean Design Aquerium</title>
+	<!--This makes sure that there screens are not seen from the start -->
+	<style>
+		.screen {
+			display: none;
+		}
+    .facebook{
+      padding: 20px;
+    }
+	</style>
+	<!--this is for the map page-->
+	<style type="text/css">
+		/* Set the size of the div element that contains the map */
+		#map {
+			height: 400px;
+			/* The height is 400 pixels */
+			width: 100%;
+			/* The width is the width of the web page */
+		}
+	</style>
+	<!-- This is to hide the template for the search section CARDS -->
+	<style>
+		.template {
+			display: none;
+		}
+	</style>
+
+</head>
+
+<body>
+  <!-- this is the script that will allow the facebook button to appear at the bottom -->
+
+
+
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="index.html">Ocean Design Aquerium</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav"> <!--Think of that as your topnav -->
+          <a data-screen="home" class="nav-item nav-link" >Home/Instructions</a>
+          <a data-screen="form" class="nav-item nav-link" >Data Retrival</a>
+          <a data-screen="data" class="nav-item nav-link" >Available Tab</a>
+          <a data-screen="map" class="nav-item nav-link" >Available Tab</a> 
+          <a data-screen="about" class="nav-item nav-link" >Available Tab</a>       
+        </div>
+      </div>
+      <!-- the original screens where placed here-->
+    </nav>
+    <!--Here is where I am going to put the screens -->
+    <div id="content">
+
+    <!-- The Home page -->
+    <center>
+      <div class="screen" id="home">
+        <!-- drop one of the screens here -->
+        <!-- here is where the logo is going to be  -->
+      <div> 
+        <center>
+          <img src="oceandesignlogo.png" class="rounded mx-auto d-block" >
+        </center>
+      </div>
+
+      <!-- Here are the columns that contain the address the hours of operation and the contact us column -->
+ <!-- column construction -->
+      <div class="container">
+        <!-- make sure to drop cards in order to make this look more presentable -->
+  <div class="row">
+    
+    <div class="col">
+      <!-- drop card here -->
+      <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Address</h5>
+    <!-- drop the address below between the p tags -->
+    <p class="card-text">
+      Ocean Design Aquarium
+7542 W. Addison St.
+Chicago, IL. 60634
+    </p>
+    <!-- this is where I am going to have a button that will open a link in google maps that will paste the directions on a google map that way the user has the ability to put their address in or use their geolocation from the device to get directions to the shop -->
+    <a class="btn btn-primary" href="https://goo.gl/maps/jM4m5aDqyU1qGR6G9" role="button">Directions</a>
+
+  </div>
+</div>
+    </div>
+    <div class="col order-5">
+      <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Contact Us</h5>
+    <p class="card-text">
+      773-625-3474 ph.
+
+    </p>
+        <p class="card-text">
+          773-625-3477 fax
+          </p>
+    <p class="card-text">
+      oceandesign@sbcglobal.net
+    </p>
+  </div>
+</div>
+    </div>
+    <div class="col order-1">
+      <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Hours Of Operation</h5>
+   <p class="card-text">
+     Monday-Friday 12pm-6pm
+Closed Thursday
+Saturday 12pm-4pm
+Sunday 12pm-4pm
+    </p>
+   
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+<!-- The header is below -->
+<center>
+<h2>A glimpse at our shop</h2>
+</center>
+
+<!-- here is where I am going to have some photos of the Aquarium -->
+<!-- get the columns and start use the cards that will have the pictures only -->
+
+<center>
+<div class="container">
+        <!-- make sure to drop cards in order to make this look more presentable -->
+  <div class="row">
+    
+    <div class="col">
+      <!-- drop card here -->
+      <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="coral2.jpg" alt="Card image cap">
+  
+</div>
+    </div>
+    <div class="col order-5">
+      <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="coral1.jpg" alt="Card image cap">
+  
+</div>
+    </div>
+    <div class="col order-1">
+      <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="fishdisplay.jpg" alt="Card image cap">
+  
+</div>
+    </div>
+  </div>
+</div>
+<!-- this is the facebook button -->
+<h2>Visit us at Facebook</h2>
+<a class="btn btn-primary" href="https://www.facebook.com/oceandesignaquariuminc" role="button">Facebook</a>
+          <!-- Below is the closing div for the screen -->
+      </div>
+
+
+      <!--The Prices Page -->
+      <div class="screen" id="form">
+        <!-- Available screen for planning -->
+          <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">Pricing</h1>
+      <p class="fs-5 text-muted">Based on your selection you will receive that number of charities, they will be selected at random. Note: there are no special petitions allowed and all sales are final.</p>
+    </div>
+<!-- Here is where the different levels of services being offered is going to be dislayed -->
+      <main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Tier 1</h4>
+          </div>
+          <div class="card-bodystop">
+            <h1 class="card-title pricing-card-title">$5<small class="text-muted fw-light"></small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>100 Charities</li>
+              <li>Email support</li>
+            </ul>
+            <button href="" type="button" class="w-100 btn btn-lg btn-outline-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Tier 2</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$10<small class="text-muted fw-light"></small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>300 Charities</li>
+              <li>Email support</li>
+            </ul>
+            <button href="" type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-white bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Tier 3</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light"></small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>500 Charities</li>
+              <li>Email support</li>
+            </ul>
+            <button href="" type="button" class="w-100 btn btn-lg btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    </div>
+  </main>
+
+<!-- end of the screen the below div tag is where the screen ends -->
+
+      </div>
+
+      <!-- The results page -->
+      <div class="screen" id="data">
+        <!-- another screen -->
+      </div>
+
+
+      <!-- Another page -->
+      <div class="screen" id="map">
+        <!-- another screen -->
+      </div>
+
+
+      <!-- The about page -->
+      <div class="screen" id="about">
+        <!-- another screen -->
+    </div>
+    <!-- End of content -->
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Here is where the typescript is going to be, that makes the screens visible-->
+      <script>
+        // This will make sure that the home screen is always being shown 
+        document.querySelector("#home").style.display= "block";
+
+        let navAnchors= document.querySelectorAll("div#navbarNavAltMarkup a")
+
+        navAnchors.forEach( (anchor) => {
+          anchor.addEventListener("click", (event) => {
+
+            //hides all the screens first
+            document.querySelectorAll(".screen").forEach( (screen) => {
+              screen.style.display = "none";
+            });
+            //read data screen attribute  
+            let screen = event.target.getAttribute("data-screen");
+
+            //find relevant screen
+            let targetScreen= document.querySelector("#" + screen);
+
+            //show it 
+            targetScreen.style.display= "block";
+          })
+        })
+      </script>
+     
+      
+  
+  </body>
+</html>
